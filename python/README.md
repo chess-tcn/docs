@@ -10,7 +10,7 @@ pip install chess-tcn
 
 ## Quick Start
 
-```py
+```python
 from chess_tcn import decode_tcn, encode_tcn, tcn_to_pgn, pgn_to_tcn
 
 # Example TCN string (e.g. from Chess.com live‐game API)

@@ -3,7 +3,7 @@ All functions in the `chess_tcn` module.
 
 ---
 ## decode_tcn
-```py
+```python
 decode_tcn(tcn: str) -> list[dict]
 ```
 
@@ -20,7 +20,7 @@ Decodes a TCN‐encoded string into a list of move dictionaries.
   - `"drop"` (str) – dropped piece (`"q"|"r"|"n"|"b"|"k"|"p"`)
 
 **Example:**
-```py
+```python
 moves = decode_tcn("mC0Kgv7Tbq5Qlt9IqHT7cM1TMFWOHs2MFwZRfm6Eeg")
 print(moves)
 # [
@@ -32,7 +32,7 @@ print(moves)
 
 ---
 ## encode_tcn
-```py
+```python
 encode_tcn(moves: list[dict] | dict) -> str
 ```
 
@@ -45,7 +45,7 @@ Serializes one or more move dictionaries into a TCN‐encoded string.
 - `str` – the TCN representation of the provided moves.
 
 **Example:**
-```py
+```python
 moves = [
     {'from': 'e2', 'to': 'e4'},
     {'from': 'e7', 'to': 'e5'}
@@ -56,7 +56,7 @@ print(tcn)  # mC0K
 
 ---
 ## tcn_to_pgn
-```py
+```python
 tcn_to_pgn(tcn: str) -> str
 ```
 
@@ -72,14 +72,14 @@ Plays a sequence of TCN moves on a fresh `python-chess` board and returns standa
 - `ValueError` if any decoded move is illegal.
 
 **Example:**
-```py
+```python
 pgn = tcn_to_pgn("mC0Kgv7Tbq5Qlt9IqHT7cM1TMFWOHs2MFwZRfm6Eeg")
 print(pgn)  # "1. e4 e5 2. Nf3 Nc6 ..."
 ```
 
 ---
 ## pgn_to_tcn
-```py
+```python
 pgn_to_tcn(pgn: str) -> str
 ```
 
@@ -95,7 +95,7 @@ Loads PGN move-text into `python-chess`, extracts its mainline moves, and encode
 - `ValueError` if the PGN fails to parse or is invalid.
 
 **Example:**
-```py
+```python
 tcn = pgn_to_tcn("1. e4 e5 2. Nf3 Nc6")
 print(tcn) # mC0Kgv5Q
 ```
