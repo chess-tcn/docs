@@ -35,4 +35,4 @@ print("TCN from PGN:", roundtrip_tcn)
 
 ## API Reference
 
-See [API.md](API.md) for full details.
+See [API.md](/python/API.md) for full details.

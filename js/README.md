@@ -34,4 +34,4 @@ console.log("New TCN string:", newTcnString);
 
 ## API Reference
 
-See [API.md](API.md) for full details.
+See [API.md](/js/API.md) for full details.
