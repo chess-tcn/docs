@@ -34,4 +34,4 @@ console.log("New TCN string:", newTcnString);
 
 ## API Reference
 
-See [API.md](https://chess-tcn.github.io/docs/#/js/API) for full details.
+See [API.md](API.md) for full details.

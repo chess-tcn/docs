@@ -35,4 +35,4 @@ print("TCN from PGN:", roundtrip_tcn)
 
 ## API Reference
 
-See [API.md](https://chess-tcn.github.io/docs/#/python/API) for full details.
+See [API.md](API.md) for full details.
